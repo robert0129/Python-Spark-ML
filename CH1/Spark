@@ -1,0 +1,43 @@
+# Spark
+Apach Spark
+Spark Core : RDD (Resilient Distributed Datase) 彈性分散式資料集
+分散式的記憶體
+
+## Advance :
+
+1. 運算數度快
+2. 容易開發
+3. 與 Hadoop 相容
+4. 跨平台
+
+## 主要功能 :
+
+1. Spark SQL DataFrame
+2. Spark Streaming
+3. GraphX
+
+## 資料處理方式
+
+1. RDD : 資料未定義　Schema，必須搭配 MapReduce 概念
+2. DataFrame : 必須定義 Schema
+3. Spark SQL : 從 DataFrame 衍伸出來，必須先建立 Schema
+
+主要差異 : 是否有定義 Schema
+
+使用難易度 : 
+Spark SQL > DataFrame > RDD 
+
+## API
+
+1. Spark MLib : RDD-Based
+2. Sprark ML Pipeline :　DataFrames-based
+
+## Spark 2.0
+
+1. 效能提升
+2. Spark SQL 
+3. Spark ML Pipeline
+4. DataSet API
+5. Structured Streaming APIs
+6. Others
+

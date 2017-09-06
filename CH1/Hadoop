@@ -1,0 +1,60 @@
+# Hadoop
+
+儲存與處理大量資料的平台
+
+## HDFS (Hadoop Distributed File System)
+
+1. NameNode
+2. DataNode
+
+### Hardware Failure 
+
+Core : 高容錯能力，能夠即使檢測錯誤並且自動恢復
+
+### Streaming Data Access
+
+批次處理非即使處理，提高存取大量資料能力，犧牲低反應時間。
+
+### Large Data Sets
+
+Cluster 叢集架構
+
+### Simple Coherency Model
+
+### Moving Computation is Cheaper than moving data
+
+### 跨平台
+
+## HDFS 檔案儲存架構
+
+### 檔案分割
+
+存檔時，會將檔案切割為多個區塊。
+
+### 區塊副本策略
+
+一個區塊會複製３份（預設），當資料損壞時，會由副本回復資料
+
+### 機架感知
+
+一個機架會有好幾台 DataNode
+
+## MapReduce
+
+分散式計算的技術
+
+### Map
+
+將工作分割成小工作，指派給各台伺服器個別執行
+
+### Reduce
+
+將所有伺服器運算完的結果彙整，傳回最後結果。
+
+## YARN(Yet Another Resource Negotiator)
+
+                            Client (向 RM 要求執行運算)
+                                \
+Container -> APP Mstr -> Resource Manager
+                                /
+                            Node

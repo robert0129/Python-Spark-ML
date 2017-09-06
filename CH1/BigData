@@ -1,0 +1,16 @@
+# BigData
+
+大資料，大數據，海量資料，巨量資料
+
+## Volumn (大量資料)
+
+資料量大，資料等級
+
+## Variety　（多樣性）
+
+1. 結構化資料　：DB and Data Warehouse
+2. 非結構化資料 : Pictures, movie, music, ..., etc.
+
+## Velocity　（速度快）
+
+資料傳輸流動快，即使處理大量資訊
