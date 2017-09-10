@@ -1,0 +1,16 @@
+# Spark Envrionment
+建立 Standalone Cluster 執行環境
+
+## 編輯 spark-env.sh
+
+```
+cp /usr/local/spark/conf/spark-env.sh.template /usr/local/spark/conf/spark-env.sh
+
+vim /usr/local/spark/conf/spark-env.sh
+...
+export SPARK_MASTER_IP=master
+exprot SPARK_WORKER_CORES=1
+export SPARK_WORKER_MEMORY=512m
+export SPARK_EXECUTOR_INSTANCES=4
+...
+```

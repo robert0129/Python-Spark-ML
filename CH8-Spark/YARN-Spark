@@ -1,0 +1,16 @@
+# YARN & SPARK
+
+## YARN 上執行 pyspark
+
+```
+HADOOP_CONF_DIR=/usr/local/hadoop/etc/hadoop pyspark --master yarn --deploy-mode client
+```
+
+## Command
+
+```
+>>> sc.master
+>>> exit()
+>>> textFile=sc.textFile("path")
+>>> textFile.count()
+```

@@ -1,0 +1,32 @@
+# Spark Command
+
+## 執行本機 Spark
+
+```
+$pyspark --master local[*]
+```
+
+## 查看目前執行模式
+
+```
+>>> sc.master
+```
+
+## 讀取本機檔案
+
+```
+textFile=sc.textFile("file:/usr/local/spark/README.txt")
+```
+
+## 顯示讀取檔案的總數目
+
+```
+textFile.count()
+```
+
+## 從 Spark 讀取 HDFS 檔案
+
+```
+textFile=sc.textFile("hdfs://master:9000/user/hduser/wordcount/input/LICENSE.txt")
+textFile.count()
+```

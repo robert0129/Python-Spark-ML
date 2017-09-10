@@ -1,0 +1,50 @@
+# Spark 2.0
+
+## Download and Install Spark
+
+```
+wget https://d3kbcqa49mib13.cloudfront.net/spark-2.2.0-bin-hadoop2.7.tgz
+tar -zxf spark-2.2.0-bin-hadoop2.7.tgz
+sudo mv spark-2.2.0-bin-hadoop2.7 /usr/local/spark/
+sudo chown -R hduser:hadoop /usr/local/spark
+```
+
+## Setup Envrionment
+
+```
+vim ~/.bashrc
+...
+export SPARK_HOME=/usr/local/spark
+export PATH=$PATH:$SPARK_HOME/bin
+...
+source ~/.basrc
+```
+
+## Spark Command
+
+```
+/* 執行　spark */
+$pyspark
+>>>
+/* 離開　spark */
+>>> exit()
+```
+
+## 修改 Spark Log 訊息設定
+
+```
+$cd /usr/local/spark/conf
+$cp log4j.properties.template log4j.properties
+$vim log4j.properties
+...
+#log4j.rootCategory=INFO,console
+log4j.rootCategory=WARN,console
+...
+```
+
+Note: 原本執行的 Ubuntu 是 14.04 ，openjdk 只支援到 1.7，但是當我執行 pyspark 時
+，顯示 Java 版本不正確，預期應該是要 openjdk 1.8 的版本，所以只好升級我的 ubuntu
+到 16.04，升級完之後，重新安裝 openjdk，先前的java 環境路徑要重新修正。
+
+# Reference 
+1.[Spark2.0](https://d3kbcqa49mib13.cloudfront.net/spark-2.2.0-bin-hadoop2.7.tgz)

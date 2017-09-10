@@ -101,7 +101,7 @@ source ~/.bashrc
 ```
 vim $HADOOP_HOME/etc/hadoop/hadoop-env.sh
 ...
-export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
 ...
 ```
 
